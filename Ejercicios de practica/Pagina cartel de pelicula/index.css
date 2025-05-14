@@ -1,0 +1,82 @@
+body {
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: tan;
+    text-align: center;
+    margin: 0;
+    flex-direction: column;
+
+}
+
+
+
+
+.Cuadro {
+
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 400px;
+    background-image: url("imagen.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px;
+}
+
+.Textos {
+
+    text-align: center;
+    color: blanchedalmond;
+    font-family: serif;
+    font-style: oblique;
+}
+
+.Protagonizado {
+
+    text-align: left;
+    transform: translate(25px, 240px);
+
+}
+
+.Axel {
+
+    text-align: left;
+    transform: translate(22px, 235px);
+    font-family: sans-serif;
+}
+
+.Teatro {
+
+    text-align: right;
+    transform: translate(-25px, 151px);
+}
+
+.Fecha {
+
+    text-align: right;
+    transform: translate(-20px, 145px);
+    font-family: sans-serif;
+}
+
+.VerButton {
+
+    background-color: antiquewhite;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.5;
+    
+
+}
+
+.VerButton:hover {
+
+    background-color: beige;
+}
