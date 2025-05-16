@@ -1,0 +1,114 @@
+body {
+    background-color: aliceblue;
+    margin: 0;
+    
+
+}
+
+h1 {
+
+    text-align: center;
+}
+
+h2 {
+
+    text-align: center;
+}
+
+h3 {
+
+    text-align: center;
+}
+
+.producto1 {
+
+    width: 200px;
+    justify-content: center;
+    margin: 15px auto;
+    display: block;
+}
+
+.producto2 {
+
+    width: 250px;
+    justify-content: center;
+    margin: 15px auto;
+    display: block;
+}
+
+.textos {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    margin: 5px;
+    font-size: large;
+}
+
+.enlace {
+    color: cadetblue;
+}
+
+.producto3 {
+
+    width: 300px;
+    margin: 15px auto;
+    display: block;
+}
+
+.inicio {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    margin-right: 50px;
+    color: black;
+    
+}
+
+.servicios {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    margin-right: 50px;
+    color: black;
+    
+}
+
+ul {
+
+    list-style: none;
+    border: 15px;
+    background-color: cadetblue;
+    display: flex;
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    font-size: larger;
+    margin: 0;
+
+
+}
+
+a {
+
+    text-decoration: none;
+    color: black;
+}
+
+.nosotros {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    margin-right:50px;
+    color: black;
+    
+}
+
+.contacto {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    margin-right: 50px;
+    color: black;
+    
+    
+}
