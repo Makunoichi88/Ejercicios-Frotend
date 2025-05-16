@@ -1,0 +1,48 @@
+body {
+
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    flex-direction: column;
+}
+
+.textos {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+.imagen {
+
+    width: 350px;
+    height: 300px;
+    
+    
+}
+
+
+.botoninicio {
+
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin: 20px;
+    background-color: azure;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    
+}
+
+.botoninicio:hover {
+
+    background-color: darkgray;
+}
+
+.botones{
+
+    display: flex;
+}

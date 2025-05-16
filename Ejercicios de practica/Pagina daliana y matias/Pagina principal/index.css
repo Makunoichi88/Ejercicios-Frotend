@@ -1,0 +1,75 @@
+body {
+
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    flex-direction: column;
+}
+
+.textos {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+.imagen {
+
+    width: 200px;
+    height: 300px;
+    
+    
+}
+
+.imagen2 {
+
+    width: 200px;
+}
+
+.imagen3 {
+
+    width: 200px;
+}
+
+.botonmatias {
+
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin: 20px;
+    background-color: darksalmon;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.botonmatias:hover {
+
+    background-color: bisque;
+}
+
+.botondaliana {
+
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin: 20px;
+    background-color: darksalmon;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    
+}
+
+.botondaliana:hover {
+
+    background-color: bisque;
+}
+
+.botones{
+
+    display: flex;
+}
