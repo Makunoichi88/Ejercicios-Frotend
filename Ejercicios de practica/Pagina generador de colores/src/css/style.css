@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+    
+}
+*{
+    color: white;
+
+}
+.contenedor{
+    text-align: center;
+    transform: translate(0, 120%);
+    
+}
+.caja{
+    
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+.caja>button{
+    transform: translate(0, 290px);
+}
