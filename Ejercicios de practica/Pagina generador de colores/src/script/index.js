@@ -1,6 +1,6 @@
 function coloraleatorio() {
 
-    const letra = "123456789ABCDF";
+    const letra = "0123456789ABCDEF";
     let color = "#";
     for(let i = 0; i < 6; i++) {
 
