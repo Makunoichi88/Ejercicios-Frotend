@@ -3,7 +3,6 @@ body{
     
 }
 *{
-    color: white;
     
     font-family: "Poppins", sans-serif;
 
@@ -14,13 +13,19 @@ body{
     border-radius: 10px;
     display: inline-block;
     padding: 15px;
-    
-    text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
+    background-color: white;
+    color: #000000;
+    font-size: 14px;
+    text-shadow: 2px 2px 5px rgb(176, 176, 176);
     transform: translate(520px, 190px);
+    box-shadow: 0 6px 10px rgb(0, 0, 0, 0.7);
+
+
 }
 .button{
     transform: translate(250px , 280px);
     border-radius:10px;
     color: black;
     width: 210px;
+    height: 40px;
 }
