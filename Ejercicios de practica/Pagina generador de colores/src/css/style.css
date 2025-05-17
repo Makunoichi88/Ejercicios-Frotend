@@ -20,4 +20,5 @@ body{
 }
 .caja>button{
     transform: translate(0, 290px);
+    color: black;
 }
