@@ -4,7 +4,7 @@ body{
 }
 *{
     color: white;
-    user-select: none;
+    
     font-family: "Poppins", sans-serif;
 
 }
@@ -19,6 +19,8 @@ body{
     transform: translate(520px, 190px);
 }
 .button{
-    transform: translate(295px , 280px);
+    transform: translate(250px , 280px);
+    border-radius:10px;
     color: black;
+    width: 210px;
 }
