@@ -1,24 +1,24 @@
 body{
-    background-color: black;
+    background-color: #b0b0b0;
     
 }
 *{
     color: white;
+    user-select: none;
+    font-family: "Poppins", sans-serif;
 
 }
-.contenedor{
-    text-align: center;
-    transform: translate(0, 120%);
-    
-}
-.caja{
-    
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
 
+.text{
+    border: solid white;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 15px;
+    
+    text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
+    transform: translate(520px, 190px);
 }
-.caja>button{
-    transform: translate(0, 290px);
+.button{
+    transform: translate(295px , 280px);
     color: black;
 }
