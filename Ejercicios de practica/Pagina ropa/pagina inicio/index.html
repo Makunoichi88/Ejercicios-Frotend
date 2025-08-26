@@ -1,59 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <link rel="stylesheet" href="/pagina principal/src/css/index.css" />
-    <meta charset="UTF-8" />
-    <title>Ropa de calidad y precio</title>
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li class="inicio"><a href="#inicio">Inicio</a></li>
-        <li class="servicios"><a href="#servicios">Servicios</a></li>
-        <li class="nosotros"><a href="#nosotros">Nosotros</a></li>
-        <li class="contacto"><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-    <img class="logo" src="/pagina principal/img/logo pagina.png" alt="" />
-    <div class="textoinicio">
-      <p>
-      ¡Bienvenidos a Lookéalo! En Lookéalo, creemos que vestirse bien es mucho
-      más que una cuestión de moda: es una forma de expresión, una manera de
-      mostrarle al mundo quién sos sin decir una palabra. Nuestra tienda nace
-      con un propósito claro: ofrecerte ropa con estilo, de calidad y a precios
-      accesibles, para que puedas lucirte todos los días sin vaciar tu bolsillo.
-      Desde el primer momento, nos propusimos romper con el mito de que lo
-      económico no puede ser bueno. Por eso, cada prenda que seleccionamos está
-      pensada para combinar diseño, durabilidad y comodidad. Porque sabemos que
-      la ropa no es solo tela: es parte de tu identidad, de tus días, de tu
-      historia. Es lo que usás para salir a conquistar el mundo, ir a clases,
-      trabajar, salir con amigos o simplemente relajarte sintiéndote vos mismo.
-      En Lookéalo te ofrecemos una experiencia diferente. Queremos que tu visita
-      a nuestra tienda —sea física o virtual— sea fácil, inspiradora y sobre
-      todo, que te represente. Aquí vas a encontrar una amplia variedad de
-      camisetas con onda, pantalones que se adaptan a tu ritmo, accesorios que
-      destacan tu personalidad y colecciones que van con las tendencias, pero
-      también con lo que a vos te gusta. Nuestra propuesta está pensada
-      especialmente para un público joven, dinámico, libre y con actitud. Gente
-      como vos, que busca verse bien sin dejar de ser auténtico, que no necesita
-      marcas caras para mostrar estilo, y que entiende que lo verdaderamente
-      importante es sentirse cómodo con uno mismo. Además, estamos comprometidos
-      con brindar una atención cercana y personalizada. Si tenés dudas,
-      consultas o sugerencias, queremos escucharte. Estamos para ayudarte, para
-      que tu compra sea rápida, clara y segura. Nos importa que vuelvas, no solo
-      por los productos, sino por la confianza. No importa si estás armando tu
-      outfit para el fin de semana, renovando tu guardarropa o buscando ese
-      detalle que te haga destacar: en Lookéalo vas a encontrar inspiración,
-      buenos precios y mucho estilo. Gracias por elegirnos. Gracias por confiar
-      en una tienda que, como vos, sabe que vestirse bien es un derecho, no un
-      lujo. ¡Lookéalo, elegilo y estrenalo!
-      </p>
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lookéalo - Ropa de calidad y precio</title>
+    <link rel="stylesheet" href="/pagina inicio/src/css/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">LOOKÉALO</div>
+            <button class="mobile-menu" onclick="toggleMenu()">☰</button>
+            <ul id="nav-menu">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección Inicio -->
+        <section id="inicio" class="section active">
+            <div class="hero">
+                <h1>¡Bienvenido a Lookéalo!</h1>
+                <p>
+                    En Lookéalo, creemos que vestirte bien no tiene que costarte una fortuna. 
+                    Somos una tienda pensada para quienes buscan estilo, calidad y buen precio en un solo lugar. 
+                    Aquí encontrarás ropa y accesorios con onda, perfectos para tu día a día, sin sacrificar tu bolsillo.
+                    <br><br>
+                    Explorá nuestras colecciones pensadas para un público joven, fresco y con personalidad. 
+                    Porque en Lookéalo, lo importante es que te veas bien, te sientas cómodo y expreses quién sos.
+                    <br><strong>¡Lookéalo, elegilo y estrenalo!</strong>
+                </p>
+            </div>
+
+            <div class="productos-grid">
+                <div class="producto">
+                    <img src="/pagina inicio/img/camiseta1.jpg" alt="Camiseta Urbana" />
+                    <div class="producto-info">
+                        <h3>Camiseta Urbana</h3>
+                        <p>Diseño moderno con estampado único. Perfecta para el día a día.</p>
+                        <p><strong>$25.000</strong></p>
+                        <button class="btn" onclick="comprar('Camiseta Urbana')">Comprar Aquí</button>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <img src="/pagina inicio/img/camiseta2.webp" alt="Camiseta Affliction" />
+                    <div class="producto-info">
+                        <h3>Camiseta Affliction Style</h3>
+                        <p>Diseño gótico con calaveras y rosas. Estilo rebelde y auténtico.</p>
+                        <p><strong>$35.000</strong></p>
+                        <button class="btn" onclick="comprar('Camiseta Affliction')">Comprar Aquí</button>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <img src="/pagina inicio/img/pantalon1.webp" alt="Jean Baggy" />
+                    <div class="producto-info">
+                        <h3>Jean Baggy</h3>
+                        <p>Cómodo y versátil. Ideal para cualquier ocasión.</p>
+                        <p><strong>$45.000</strong></p>
+                        <button class="btn" onclick="comprar('Jean Clásico')">Comprar Aquí</button>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <img src="/pagina inicio/img/pantalon2.webp" alt="Jean Baggy" />
+                    <div class="producto-info">
+                        <h3>Jean Baggy</h3>
+                        <p>Perfecto para un look más swag.</p>
+                        <p><strong>$50.000</strong></p>
+                        <button class="btn" onclick="comprar('Jean Skinny')">Comprar Aquí</button>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <img src="/pagina inicio/img/pantalon3.webp" alt="Pantalón Cargo" />
+                    <div class="producto-info">
+                        <h3>Pantalón Cargo</h3>
+                        <p>Estilo urbano con múltiples bolsillos. Comodidad y funcionalidad.</p>
+                        <p><strong>$40.000</strong></p>
+                        <button class="btn" onclick="comprar('Pantalón Cargo')">Comprar Aquí</button>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <img src="/pagina inicio/img/descripimagen.jpg" alt="Conjunto Especial" />
+                    <div class="producto-info">
+                        <h3>Camiseta Premium</h3>
+                        <p>Diseño exclusivo con materiales de primera calidad.</p>
+                        <p><strong>$55.000</strong></p>
+                        <button class="btn" onclick="comprar('Camiseta Premium')">Comprar Aquí</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
     <footer>
-      <h3><a href="">Facebook</a></h3>
-      <h3><a href="">Gmail</a></h3>
-      <h3><a href="">Términos</a></h3>
-      <h3><a href="">Instagram</a></h3>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Lookéalo</h3>
+                <p>Tu tienda de moda urbana favorita. Calidad, estilo y precios accesibles en un solo lugar.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <a href="#" onclick="abrirRed('facebook')">Facebook</a>
+                <a href="#" onclick="abrirRed('instagram')">Instagram</a>
+                <a href="#" onclick="abrirRed('twitter')">Twitter</a>
+                <a href="#" onclick="abrirRed('tiktok')">TikTok</a>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <a href="#" onclick="mostrarTerminos()">Términos y Condiciones</a>
+                <a href="#" onclick="mostrarPrivacidad()">Política de Privacidad</a>
+                <a href="#" onclick="mostrarCookies()">Política de Cookies</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Lookéalo. Todos los derechos reservados. | Diseñado por Maikol en Colombia</p>
+        </div>
     </footer>
-  </body>
-</html>
+
+    
