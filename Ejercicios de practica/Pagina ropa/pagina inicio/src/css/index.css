@@ -11,7 +11,7 @@
             line-height: 1.6;
         }
 
-        /* Header y navegación */
+        
         header {
             position: fixed;
             top: 0;
@@ -66,7 +66,7 @@
             transform: translateY(-2px);
         }
 
-        /* Contenido principal */
+        
         main {
             margin-top: 70px;
             min-height: calc(100vh - 140px);
@@ -89,7 +89,7 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Sección Inicio */
+        
         .hero {
             text-align: center;
             padding: 60px 20px;
@@ -112,7 +112,7 @@
             margin: 0 auto 40px;
         }
 
-        /* Productos */
+        
         .productos-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -175,7 +175,7 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
-        /* Footer */
+        
         footer {
             background: chocolate;
             color: white;
@@ -215,64 +215,4 @@
             font-size: 14px;
         }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-                height: auto;
-                padding: 10px;
-            }
-
-            nav ul {
-                margin-top: 10px;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            main {
-                margin-top: 120px;
-            }
-
-            .hero h1 {
-                font-size: 2em;
-            }
-
-            .nosotros-content,
-            .contacto-content {
-                grid-template-columns: 1fr;
-            }
-
-            .productos-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .mobile-menu {
-            display: none;
-        }
-
-        @media (max-width: 768px) {
-            .mobile-menu {
-                display: block;
-                background: none;
-                border: none;
-                color: white;
-                font-size: 24px;
-                cursor: pointer;
-            }
-
-            nav ul {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: chocolate;
-                flex-direction: column;
-                padding: 20px 0;
-            }
-
-            nav ul.show {
-                display: flex;
-            }
-        }
+        
